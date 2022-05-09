@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--fonty-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Zadanie 3</title>
+
+  <style type="text/css">
+    .jumbotron {
+      /* Photo by Sergey Sokolov on Unsplash */
+      background-image: url('img/background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+
+    section {
+      padding-top: 4rem;
+    }
+
+    #top {
+      color: #ccddff;
+    }
+
+    .top-container {
+      padding-top: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color: #6699ff">
+    <a href="#" class="navbar-brand">
+      <img src="img/paw.png" width="40" height="40" alt="logo" style="padding:5px;"> PAW
+    </a>
+
+    <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto" id="navScrollspy">
+        <li class="nav-item">
+          <a class="nav-link" href="#top">Do góry</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#section-description">O nas</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#section-showcase">Portfolio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#section-oferta">Usługi</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#section-cennik">Ceny</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <section id="top" class="jumbotron jumbotron-fluid">
+      <div class="container top-container">
+        <h1 class="display-1">PAW</h1>
+        <p class="display-4">Chwytamy chwile</p>
+        <p class="lead">Podziel się z przyjaciółmi i resztą świata swoimi najlepszymi zdjęciami i filmami</p>
+        <p><strong>Pobierz teraz na:</strong></p>
+        <a href="#" class="btn btn-lg btn-primary">App Store</a>
+        <a href="#" class="btn btn-lg btn-primary">Google Play</a>
+      </div>
+    </section>
+  </header>
+
+  <div class="container">
+    <section id="section-description">
+      <h2 class="display-4">Kim jesteśmy?</h2>
+      <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz
+        pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki.</p>
+      <p>Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym.
+        Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum,
+        a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na
+        komputerach osobistych, jak Aldus PageMaker.</p>
+    </section>
+
+
+    <section id="section-showcase">
+      <h2 class="display-4">PAW w akcji</h2>
+      <p>Przykłady naszej działalności</p>
+
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <img src="img/las.jpg" alt="W lesie" class="d-block img-fluid">
+            <div class="carousel-caption">
+              <h4 class="display-4">W lesie</h4>
+              <p>Opis obrazka 1</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/niebo.jpg" alt="W chmurach" class="d-block img-fluid">
+            <div class="carousel-caption">
+              <h4 class="display-4">W chmurach</h4>
+              <p>Opis obrazka 2</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/tropiki.jpg" alt="W tropikach" class="d-block img-fluid">
+            <div class="carousel-caption">
+              <h4 class="display-4">W tropikach</h4>
+              <p>Opis obrazka 3</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/przestworza.jpg" alt="W przestworzach" class="d-block img-fluid">
+            <div class="carousel-caption">
+              <h4 class="display-4">W przestworzach</h4>
+              <p>Opis obrazka 4</p>
+            </div>
+          </div>
+
+        </div>
+
+        <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Poprzedni</span>
+        </a>
+
+        <a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Następny</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="section-oferta">
+      <h2 class="display-4">Co oferujemy</h2>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center">
+          <div class="h1"><i class="fa fa-paint-brush mb-4 text-info"></i></div>
+          <h3 class="h4 mb-4 text-center">Oferta 1</h3>
+          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+          <a href="#" class="btn btn-sm btn-info">Więcej...</a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center">
+          <div class="h1"><i class="fa fa-video-camera mb-4 text-info"></i></div>
+          <h3 class="h4 mb-4 text-center">Oferta 2</h3>
+          <p>Neque porro quisquam est qui dolorem ipsum quiadolor sit amet, consectetur, adipisci velit.</p>
+          <a href="#" class="btn btn-sm btn-info">Więcej...</a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center">
+          <div class="h1"><i class="fa fa-instagram mb-4 text-info" aria-hidden="true"></i></div>
+          <h3 class="h4 mb-4 text-center">Oferta 3</h3>
+          <p>Neque porro quisquam est qui dolorem ipsum quiadolor sit amet, consectetur, adipisci velit.</p>
+          <a href="#" class="btn btn-sm btn-info">Więcej...</a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center">
+          <div class="h1"><i class="fa fa-mobile mb-4 text-info" aria-hidden="true"></i></div>
+          <h3 class="h4 mb-4 text-center">Oferta 4</h3>
+          <p>Neque porro quisquam est qui dolorem ipsum quiadolor sit amet, consectetur, adipisci velit.</p>
+          <a href="#" class="btn btn-sm btn-info">Więcej...</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="section-cennik">
+      <h2 class="display-4">Wybierz plan cenowy</h2>
+      <div class="row">
+
+
+        <div class="col-12 col-md-4">
+          <div class="card">
+
+            <div class="card-header">
+              <h2>Starter</h2>
+              <h4>Za darmo</h4>
+            </div>
+
+            <div class="card-body">
+              <p class="card-text">Idealne, jeśli robisz zdjęcia tylko dla zabawy</p>
+            </div>
+
+            <ul class="list-group">
+              <li class="list-group-item">Popraw swoje zdjęcia i filmy</li>
+              <li class="list-group-item">Udostępnij je na Instagramie</li>
+            </ul>
+
+            <div class="card-footer">
+              <a href="#" class="btn btn-success btn-lg">Wybierz plan</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-4">
+          <div class="card">
+
+            <div class="card-header">
+              <h2>Semi-pro</h2>
+              <h4>$1.99/miesiąc</h4>
+            </div>
+
+            <div class="card-body">
+              <p class="card-text">Idealny, jeśli jesteś półprofesjonalnym fotografem</p>
+            </div>
+
+            <ul class="list-group">
+              <li class="list-group-item">Popraw swoje zdjęcia i filmy</li>
+              <li class="list-group-item">Udostępnij je na Instagramie</li>
+              <li class="list-group-item">Zaawansowane ustawienia</li>
+            </ul>
+
+            <div class="card-footer">
+              <a href="#" class="btn btn-success btn-lg">Wybierz plan</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-4">
+          <div class="card">
+
+            <div class="card-header">
+              <h2>Pro</h2>
+              <h4>$4.99/miesiąc</h4>
+            </div>
+
+            <div class="card-body">
+              <p class="card-text">Idealny, jeśli jesteś profesjonalnym fotografem</p>
+            </div>
+
+            <ul class="list-group">
+              <li class="list-group-item">Popraw swoje zdjęcia i filmy</li>
+              <li class="list-group-item">Udostępnij je na Instagramie</li>
+              <li class="list-group-item">Zaawansowane ustawienia</li>
+              <li class="list-group-item">Przechowywanie w chmurze</li>
+            </ul>
+
+            <div class="card-footer">
+              <a href="#" class="btn btn-success btn-lg">Wybierz plan</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2021 PAW by MK. Wszystkie prawa zatrzeżone.</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">
+          Polityka prywatności
+        </button>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Obowiązek informacyjny</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span ariahidden="true">x</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam neque est, dapibus sed scelerisque eu,
+              ultricies nec risus. In placerat vitae eros eget interdum. Donec aliquet, quam sit amet ullamcorper
+              tempor, leo massa ornare libero, eu iaculis erat purus at augue. Vivamus quis nisi eget turpis ornare
+              rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed mi ante. Sed non sollicitudin
+              elit, et gravida arcu.</p>
+            <p>Morbi et turpis varius, suscipit risus ut, interdum orci. Donec sit amet placerat lacus. In vel blandit
+              mi, sed accumsan tortor. Praesent congue orci rutrum felis feugiat sollicitudin. Phasellus mollis nisi et
+              urna varius tempus. Sed tincidunt pulvinar bibendum. Phasellus venenatis sit amet metus et efficitur.
+              Nulla ullamcorper luctus leo lacinia finibus. Mauris vel risus sollicitudin elit condimentum ullamcorper.
+              Suspendisse in ligula lacus. In dignissim dignissim posuere. Nam in elit finibus eros vulputate facilisis.
+              Mauris fringilla magna aliquet augue hendrerit, eget suscipit neque elementum. Nunc sodales accumsan
+              libero ac molestie.</p>
+            <p>Cras elementum augue quam, eget fringilla arcu interdum elementum. In id ultricies leo, sit amet blandit
+              lacus. Maecenas blandit viverra erat ut fermentum. Phasellus sit amet sollicitudin libero. Nullam in
+              sapien at tortor gravida interdum non id ante. Mauris dictum at mi vel vehicula. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam et finibus nibh. Nam vulputate
+              magna id congue faucibus. Quisque a ante ante. Aenean eu lectus convallis, accumsan nibh egestas, blandit
+              erat. Cras sit amet lectus enim. Ut cursus sem non quam vehicula, in consectetur ipsum porta. Vestibulum
+              nec facilisis libero, non aliquet nibh. Nam nec ante id nibh pulvinar vestibulum in sed est. Aenean
+              dapibus vestibulum congue.</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
